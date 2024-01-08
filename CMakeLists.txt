@@ -218,6 +218,10 @@ endif()
 #Monocular inertial examples
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular-Inertial)
 
+add_executable(mono_inertial_iphone14pro
+        Examples/Monocular-Inertial/mono_inertial_iphone14pro.cc)
+target_link_libraries(mono_inertial_iphone14pro ${PROJECT_NAME})
+
 add_executable(mono_inertial_euroc
         Examples/Monocular-Inertial/mono_inertial_euroc.cc)
 target_link_libraries(mono_inertial_euroc ${PROJECT_NAME})
